@@ -1,0 +1,24 @@
+{
+  "name": "gridsome-plugin-purgecss",
+  "version": "1.0.0",
+  "description": "A Tailwind-friendly purgecss plugin for Gridsome.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/brandonpittman/gridsome-plugin-purgecss.git"
+  },
+  "keywords": [
+    "gridsome",
+    "tailwind",
+    "purgecss"
+  ],
+  "author": "Brandon Pittman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandonpittman/gridsome-plugin-purgecss/issues"
+  },
+  "homepage": "https://github.com/brandonpittman/gridsome-plugin-purgecss#readme"
+}
