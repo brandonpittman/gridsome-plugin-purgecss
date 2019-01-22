@@ -23,8 +23,6 @@ class PurgeCssPlugin {
   constructor(api, options) {
     const purgecssOptions = options
 
-    console.log(options)
-
     api.chainWebpack(config => {
       config.module
         .rule('css') // or sass, scss, less, postcss, stylus
