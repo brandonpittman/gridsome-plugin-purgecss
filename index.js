@@ -15,8 +15,12 @@ class PurgeCssPlugin {
         './src/**/*.jsx',
         './src/**/*.md'
       ],
-      extractor: TailwindExtractor,
-      extensions: ['vue', 'js', 'jsx', 'md']
+      extractors: [
+        {
+          extractor: TailwindExtractor,
+          extensions: ['vue', 'js', 'jsx', 'md']
+        }
+      ]
     }
   }
 
