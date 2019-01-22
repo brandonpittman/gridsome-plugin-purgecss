@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/brandonpittman/gridsome-plugin-purgecss/issues"
   },
-  "homepage": "https://github.com/brandonpittman/gridsome-plugin-purgecss#readme"
+  "homepage": "https://github.com/brandonpittman/gridsome-plugin-purgecss#readme",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "latest"
+  }
 }
