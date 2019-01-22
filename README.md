@@ -3,7 +3,7 @@
 This plugin will add [Purgecss](https://www.purgecss.com) to your
 [Gridsome](http://gridsome.org) project.
 
-To use this plugin, add the following to your `gridsome.config.js`.
+To use this plugin, run `npm install -D gridsome-plugin-purgecss` add the following to your `gridsome.config.js`.
 
 ```javascript
 plugins: [
