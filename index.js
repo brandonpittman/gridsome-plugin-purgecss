@@ -7,7 +7,24 @@ class TailwindExtractor {
 }
 
 class PurgeCssPlugin {
+  static defaultOptions() {
+    return {
+      content: [
+        './src/**/*.vue',
+        './src/**/*.js',
+        './src/**/*.jsx',
+        './src/**/*.md'
+      ],
+      extractor: TailwindExtractor,
+      extensions: ['vue', 'js', 'jsx', 'md']
+    }
+  }
+
   constructor(api, options) {
+    const purgecssOptions = options
+
+    console.log(options)
+
     api.chainWebpack(config => {
       config.module
         .rule('css') // or sass, scss, less, postcss, stylus
@@ -15,22 +32,7 @@ class PurgeCssPlugin {
         .use('postcss-loader')
         .tap(options => {
           if (process.env.NODE_ENV === 'production') {
-            options.plugins.push(
-              purgecss({
-                content: [
-                  './src/**/*.vue',
-                  './src/**/*.js',
-                  './src/**/*.jsx',
-                  './src/**/*.md'
-                ],
-                extractors: [
-                  {
-                    extractor: TailwindExtractor,
-                    extensions: ['vue', 'js', 'jsx', 'md']
-                  }
-                ]
-              })
-            )
+            options.plugins.push(purgecss(purgecssOptions))
           }
           return options
         })
