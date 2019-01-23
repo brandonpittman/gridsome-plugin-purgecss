@@ -13,12 +13,13 @@ class PurgeCssPlugin {
         './src/**/*.vue',
         './src/**/*.js',
         './src/**/*.jsx',
-        './src/**/*.md'
+        './src/**/*.md',
+        './src/**/*.pug'
       ],
       extractors: [
         {
           extractor: TailwindExtractor,
-          extensions: ['vue', 'js', 'jsx', 'md']
+          extensions: ['vue', 'js', 'jsx', 'md', 'pug']
         }
       ]
     }
