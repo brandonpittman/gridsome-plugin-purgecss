@@ -2,7 +2,7 @@ const purgecss = require('@fullhuman/postcss-purgecss')
 
 class TailwindExtractor {
   static extract(content) {
-    return content.match(/[A-z0-9-:\/]+/g) || []
+    return content.match(/[A-z0-9-:\\/]+/g)
   }
 }
 
@@ -13,13 +13,15 @@ class PurgeCssPlugin {
         './src/**/*.vue',
         './src/**/*.js',
         './src/**/*.jsx',
-        './src/**/*.md',
-        './src/**/*.pug'
+        './src/**/*.html',
+        './src/**/*.pug',
+        './src/**/*.md'
       ],
+      whitelist: ['body', 'html'],
       extractors: [
         {
           extractor: TailwindExtractor,
-          extensions: ['vue', 'js', 'jsx', 'md', 'pug']
+          extensions: ['vue', 'js', 'jsx', 'md', 'html', 'pug']
         }
       ]
     }
@@ -44,3 +46,4 @@ class PurgeCssPlugin {
 }
 
 module.exports = PurgeCssPlugin
+
