@@ -17,7 +17,7 @@ class PurgeCssPlugin {
         './src/**/*.pug',
         './src/**/*.md'
       ],
-      whitelist: ['body', 'html'],
+      whitelist: ['body', 'html', 'img'],
       extractors: [
         {
           extractor: TailwindExtractor,
