@@ -17,7 +17,15 @@ class PurgeCssPlugin {
         './src/**/*.pug',
         './src/**/*.md'
       ],
-      whitelist: ['body', 'html', 'img'],
+      whitelist: [
+        'body',
+        'html',
+        'img',
+        'a',
+        'g-image',
+        'g-image--lazy',
+        'g-image--loaded'
+      ],
       extractors: [
         {
           extractor: TailwindExtractor,
@@ -46,4 +54,3 @@ class PurgeCssPlugin {
 }
 
 module.exports = PurgeCssPlugin
-
