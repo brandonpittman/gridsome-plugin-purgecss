@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/brandonpittman/gridsome-plugin-purgecss#readme",
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^1.1.0"
+    "@fullhuman/postcss-purgecss": "latest"
   }
 }
