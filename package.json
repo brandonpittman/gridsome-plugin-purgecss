@@ -1,6 +1,6 @@
 {
   "name": "gridsome-plugin-purgecss",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A Tailwind-friendly purgecss plugin for Gridsome.",
   "main": "index.js",
   "scripts": {
