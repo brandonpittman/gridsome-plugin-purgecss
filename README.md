@@ -15,18 +15,11 @@ plugins: [
         './src/**/*.vue',
         './src/**/*.js',
         './src/**/*.jsx',
+        './src/**/*.pug',
         './src/**/*.md'
       ],
-      extractor: TailwindExtractor,
-      extensions: ['vue', 'js', 'jsx', 'md']
+	  defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
 	}
   }
 ]
-
-// default extractor
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-z0-9-:\/]+/g) || []
-  }
-}
 ```
