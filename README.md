@@ -1,5 +1,9 @@
 # gridsome-plugin-purgecss
 
+**DEPRECATED**
+
+Merged into the Tailwind plugin. 
+
 This plugin will add [Purgecss](https://www.purgecss.com) to your
 [Gridsome](http://gridsome.org) project.
 
